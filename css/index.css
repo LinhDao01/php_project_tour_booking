@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+ 
+.logo { 
+    height: 70px;
+    width: 150px;
+}
+.head1 {
+    border-bottom: 2px solid rgb(88, 163, 153); 
+    background-color: rgb(165, 221, 155);
+}
+.head2 {
+    background-color: rgb(165, 221, 155);
+}
+#nav-1 {
+    background-color: rgb(165, 221, 155);
+}
+/* For dropdown-menu */
+.dropdown-menu {
+    border-radius: 15px;
+    padding: .5em;
+    box-shadow: 0 3px 6px grey;
+    border: none;
+}
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;                    
+}
+.dropdown-menu li a {
+    color: gray;
+    padding: .5em 1em;
+}
+.dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ đổi thành kiểu đổ dọc xuống */
+@media screen and (min-width:993px) {
+    .dropdown-menu.show{
+        display: flex;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: flex;
+    }     
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ cuộn được trong phạm vi cho phép*/
+@media screen and (max-width:992px) {
+    .dropdown-menu.show{
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+}
+
+/* body */
+
+.tour-name {
+    height: 75px;
+}
+
+.ht-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3; /* hiện bao nhiêu dòng*/
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+
+
+
+/* footer */
+ul.footpanel{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footpanel li a {
+    text-decoration: none;
+    
+}
+
+li.decor a {
+    text-decoration: none;
+}
+
+.avatar-lg {
+    width: 3rem;
+    height: 3rem;
+}

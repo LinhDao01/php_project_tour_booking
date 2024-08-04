@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* header */
+img {
+    height: 50px;
+    width: 120px; 
+}
+
+.head1 {
+    background-color: rgb(116, 192, 255);
+}
+
+.dropdown-menu {
+    border-radius: 15px;
+    padding: .5em;
+    box-shadow: 0 3px 6px grey;
+    border: none;
+}
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;                    
+}
+.dropdown-menu li a {
+    color: gray;
+    padding: .5em 1em;
+}
+.dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ đổi thành kiểu đổ dọc xuống */
+@media screen and (min-width:993px) {
+    .dropdown-menu.show{
+        display: flex;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: flex;
+    }     
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ cuộn được trong phạm vi cho phép*/
+@media screen and (max-width:992px) {
+    .dropdown-menu.show{
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+}
+
+/* body */
+input {
+    overflow-wrap: break-word;
+  }
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+.mycard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+.search-bar {
+    background-color:rgb(233, 233, 233) ;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(150, 150, 150, 0.7);
+}
+ 
+.card {
+    border: none;
+}
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+.avatar {
+    height: 130px;
+    width: 130px;
+}
+
+.point > a{
+    color: rgb(0, 190, 232);
+}
+
+.hidden {
+    display: none;
+    
+}
+
+.status {
+    width: 250px;
+}
+
+.enter {
+    height: 37px;
+    border: 1px solid gray;
+}
+
+.avatar-lg {
+    width: 8rem;
+    height: 8rem;
+}

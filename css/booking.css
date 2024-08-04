@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* header */
+img {
+    height: 50px;
+    width: 120px;
+}
+
+.head1 {
+    background-color: rgb(165, 221, 155);
+}
+
+.dropdown-menu {
+    border-radius: 15px;
+    padding: .5em;
+    box-shadow: 0 3px 6px grey;
+    border: none;
+}
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;                    
+}
+.dropdown-menu li a {
+    color: gray;
+    padding: .5em 1em;
+}
+.dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ đổi thành kiểu đổ dọc xuống */
+@media screen and (min-width:993px) {
+    .dropdown-menu.show{
+        display: flex;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: flex;
+    }     
+}
+/* khi màn hình kéo nhỏ lại thì cái dropdown sẽ cuộn được trong phạm vi cho phép*/
+@media screen and (max-width:992px) {
+    .dropdown-menu.show{
+        max-height: 60vh;
+        overflow-y: scroll;
+    }
+}
+
+.avatar-lg {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* body */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+a.condition:hover {
+    color: yellowgreen;
+}  
+
+/* footer */
+ul.footpanel{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footpanel li a {
+    text-decoration: none;
+    
+}
+
+li.decor a {
+    text-decoration: none;
+}
